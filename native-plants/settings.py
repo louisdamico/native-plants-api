@@ -46,28 +46,10 @@ else:
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 # Default database as defined above depending on development
 # or production environment
-
 DATABASES = {
     'default': DB
 }
-# Development DB
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'native-plants',
-#     }
-# }
-# Production DB
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'mydatabase',
-#         'USER': 'mydatabaseuser',
-#         'PASSWORD': 'mypassword',
-#         'HOST': '127.0.0.1',
-#         'PORT': '5432',
-#     }
-# }
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 

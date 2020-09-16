@@ -14,18 +14,15 @@ class SignUp(generics.CreateAPIView):
     # is not authenticated & we don't need any permissions to access it.
     authentication_classes = ()
     permission_classes = ()
-
     # Serializer classes are required for endpoints that create data
     serializer_class = UserRegisterSerializer
-
     def post(self, request):
         # Pass the request data to the serializer to validate it
-        data = UserRegisterSerializer(data=request.data['credentials'])
+        user = UserRegisterSerializer(data=request.data['credentials'])
         # If that data is in the correct format...
-        if data.is_valid():
+        if user.is_valid():
             # Actually create the user using the UserSerializer (the `create` method defined there)
             created_user = UserSerializer(data=user.data)
-
             if created_user.is_valid():
                 # Save the user and send back a response!
                 created_user.save()
