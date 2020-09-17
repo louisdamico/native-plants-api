@@ -11,7 +11,7 @@ from ..models.favorite import Favorite
 from ..serializers import FavoriteSerializer, UserSerializer
 
 # Create your views here.
-class Favorite(generics.ListCreateAPIView):
+class Favorites(generics.ListCreateAPIView):
     permission_classes=(IsAuthenticated,)
     serializer_class = FavoriteSerializer
     def get(self, request):
