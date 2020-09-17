@@ -14,6 +14,7 @@ django = "==3.0"
 gunicorn = "*"
 python-dotenv = "*"
 dj-database-url = "*"
+whitenoise = "*"
 
 [requires]
 python_version = "3.7"
