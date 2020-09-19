@@ -43,7 +43,7 @@ class FavoriteDetail(generics.RetrieveUpdateDestroyAPIView):
     def get(self, request, pk):
         """Show request"""
         # Locate the mango to show
-        favorite = get_object_or_404(Mango, pk=pk)
+        favorite = get_object_or_404(Favorite, pk=pk)
         # Only want to show owned mangos?
         if not request.user.id == favorite.owner.id:
             raise PermissionDenied('Unauthorized, you do not own this list')

@@ -13,7 +13,7 @@ class MangoSerializer(serializers.ModelSerializer):
 class FavoriteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Favorite
-        fields = ('id', 'state', 'ecoregion', 'type', 'common_name', 'owner')
+        fields = ('id', 'list_name', 'state', 'ecoregion', 'type', 'common_name', 'owner')
 
 class UserSerializer(serializers.ModelSerializer):
     # This model serializer will be used for User creation
