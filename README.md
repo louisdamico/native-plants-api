@@ -5,7 +5,7 @@ This application is a Native plant field guide designed for professionals and a 
 ## Important Links
 
 - [Deployed Client](https://louisdamico.github.io/native-plants-client/#/)
-- [Client Repo]https://louisdamico.github.io/native-plants-client/
+- [Client Repo](https://louisdamico.github.io/native-plants-client/)
 - [Deployed API](https://native-plants-app.herokuapp.com/)
 - [Gantt Chart](https://docs.google.com/spreadsheets/d/1hUHYbxF8i37bEgrGfgN9qWebLXFGVB-AdIgRZn4mn1o/edit?usp=sharing)
 
